@@ -119,6 +119,17 @@
 		}
 
 		$query=mysqli_query($con,"INSERT INTO users VALUES('','$fname','$lname','$username','$em','$password','$date','$profile_pic','0','0','no',',')"); 
+
+		array_push($erro_array, "<span style='color:#14C800'> You´re all set! Goahead and login</span><br>");
+
+		//clear session variables
+		$_SESSION['reg_fname']='';
+		$_SESSION['reg_lname']='';
+		$_SESSION['reg_mail']='';
+		$_SESSION['reg_mail2']='';
+		
+
+
 	}
 }
 ?>
@@ -171,6 +182,12 @@
 
 
 		<input type="submit" name="register_button" value="Register">
+
+		<br>
+
+		<?php
+			if(in_array("<span style='color:#14C800'> You´re all set! Goahead and login</span><br>",$erro_array))echo "You´re all set! Goahead and login <br>"; 
+		 ?>
     
 	</form>
 </body>
