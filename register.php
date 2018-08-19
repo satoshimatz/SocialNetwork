@@ -1,7 +1,10 @@
 
 <?php
    require 'config/config.php';
-   require 'includes/form_handlers/register_handler.php'
+    require 'includes/form_handlers/login_handler.php';
+   require 'includes/form_handlers/register_handler.php';
+  
+
    ?>
 <!DOCTYPE html>
 <html>
@@ -9,6 +12,15 @@
 	<title>welcome to MILBOOK</title>
 </head>
 <body>
+
+	<form action="register.php" method="POST">
+		<input type="email" name="log_mail" placeholder="email address">
+		<br>
+		<input type="password" name="log_password" placeholder="password">
+		<br>
+		<input type="submit" name="login_button" value="login">
+		
+	</form>
 	<form action="register.php" method="POST">
 		<input type="text" name="reg_fname" placeholder="First Name" value="<?php if(isset($_SESSION['reg_fname'])){echo $_SESSION['reg_fname'];}?>" required>
 		<br>
