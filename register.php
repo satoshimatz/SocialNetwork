@@ -12,12 +12,21 @@
 <head>
 	<title>welcome to MILBOOK</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/register_style.css">
+	<link href="https://fonts.googleapis.com/css?family=Anton|Permanent+Marker" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="assets/js/register.js"> </script>
+
 
 </head>
 <body>
  	 <div class="wrapper">
- 	 	<div class="login_box">
 
+ 	 	<div class="login_box">
+ 	 		<div class="login_header">
+ 	 		<h1> MilBook!!</h1>
+ 	 		Login or sign up below!!
+ 	 		</div>
+ 	 		<div id="first">
 			<form action="register.php" method="POST">
 				<input type="email" name="log_mail" placeholder="email address" value="<?php 
 				if(isset($_SESSION['log_mail'])){echo $_SESSION['log_mail'];}?>" requried>
@@ -29,7 +38,11 @@
 				<?php 
 				if(in_array("Email or Password was Incorrect <br>",$erro_array)) echo "Email or Password was Incorrect <br>"; 
 					?>
+					<br>
+				<a href="#" id="signup" class="signup"> Need an account register here please</a>
 			</form>
+		</div>
+		<div id="second">
 			<form action="register.php" method="POST">
 				<input type="text" name="reg_fname" placeholder="First Name" value="<?php if(isset($_SESSION['reg_fname'])){echo $_SESSION['reg_fname'];}?>" required>
 				<br>
@@ -79,8 +92,11 @@
 				<?php
 					if(in_array("<span style='color:#14C800'> You´re all set! Goahead and login</span><br>",$erro_array))echo "You´re all set! Goahead and login <br>"; 
 				 ?>
+				 <br>
+				 <a href="#" id="sigin" class="sigin"> ALready have an account? Sing in here!</a>
 		    
 			</form>
+		</div>
 		</div>	
 </div>
 </body>

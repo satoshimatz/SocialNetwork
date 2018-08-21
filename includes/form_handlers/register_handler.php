@@ -109,6 +109,7 @@
 		$_SESSION['reg_mail']='';
 		$_SESSION['reg_mail2']='';
 		
+		
 	}
 }
 ?>

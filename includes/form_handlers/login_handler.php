@@ -20,11 +20,16 @@
   		$_SESSION['username']=$username;
   		header("Location: index.php");
      	exit();
+      
+
+
   	}
     else{
 
       array_push($erro_array, "Email or Password was Incorrect <br>");
     }
+
+      
 
   }
  ?>
