@@ -92,10 +92,10 @@
 	 	
 	 	$rand=rand(1,2);//Random number between 1 and 2
 	 	if($rand==1){
-	 		$profile_pic ="assets\images\profile_pics\Default\head_emerald.png";
+	 		$profile_pic ="assets/mages/profile_pics/Default/head_emerald.png";
 			}
 		else if($rand==2){
-			$profile_pic="assets\images\profile_pics\Default\head_deep_blue.png";
+			$profile_pic="assets/images/profile_pics/Default/head_deep_blue.png";
 		}
 		
 		$query=mysqli_query($con,"INSERT INTO users VALUES('','$fname','$lname','$username','$em','$password','$date','$profile_pic','0','0','no',',')"); 

@@ -19,6 +19,22 @@
 
 </head>
 <body>
+
+	<?php
+		if(isset($_POST["register_button"])){
+
+			echo '<script>
+
+					$(document).ready(function() {
+						$("#first").hide();
+						$("#second").show();
+					});
+
+				</script>';
+		}
+
+	?>
+
  	 <div class="wrapper">
 
  	 	<div class="login_box">

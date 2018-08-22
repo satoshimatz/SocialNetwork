@@ -1,0 +1,50 @@
+
+
+.top_bar{
+	width: 100%;
+	min-width:1050px;
+	height: 40px;
+	background-color:#01578A ;
+	border-bottom: 0.25em solid #009CD5;
+|	margin: 0 0 10px 0;
+	display: inline-flex;
+
+}
+
+body{
+	line-height: 17px;
+}
+.logo a{
+
+	 font-family: 'Indie Flower', cursive;
+	 margin-left: 10px;
+	 font-size: 150%;
+	 position: relative;
+	 top:9px;
+
+
+
+}
+a:hover{
+	text-decoration: none;
+}
+
+
+.navi{
+	float: right;
+	right: 1px;
+	position: absolute;
+	margin:10px;
+
+	
+}
+.navi a{
+	position: relative;
+	text-decoration: none;
+	font-size: 17px;
+	color: #fff;
+}
+.navi a:hover{
+	border-bottom: 7px solid #325D7F;
+}
+

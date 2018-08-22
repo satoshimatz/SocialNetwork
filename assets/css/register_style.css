@@ -84,6 +84,8 @@ input[type="text"]:hover,input[type="email"]:hover,input[type=password]:hover
 {
 	border-color:#223351;
 }
+
+
 #second{
 	display: none;
 }

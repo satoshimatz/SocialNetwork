@@ -1,13 +1,13 @@
 <?php
-  require 'config/config.php';
-  
+  include("includes/header.php");
+
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Welcome to MILBOOK</title>
-</head>
-<body>
-	Hello Bruce!!!
+
+<div class="user_details column">
+	<a href="#"><img src="<?php echo $user['profile_pic']; ?>"> </a>
+	
+</div>
+
+	
 </body>
 </html>
